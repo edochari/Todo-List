@@ -2,10 +2,52 @@
     <head>
         <title>
             <%= title %>
-            <link href=""
+           
         </title>
+
+        <link rel="stylesheet" href="/css/home.css" >
     </head>
     <body>
-        <h1>TODO App</h1>
+        <h1 id="main-heading">TODO App</h1>
+        <div>
+            <div>
+            <form>
+                <label for="description" >DESCRIPTION</label>
+                <input type="text" placeholder="what do you need to do">
+            </form>
+            </div>
+            <div>
+                <form>
+                    <label for="category" >CATEGORY</label>
+                    <select name="category" id="category" >
+                        <option value="personal">personal</option>
+                        <option value="work">work</option>
+                        <option value="school">school</option>
+                        <option value="cleaning">cleaning</option>
+                        <option value="others">others</option>
+
+                    </select>
+                </form>
+            </div>
+            <div>
+                <form>
+                    <label for="date">
+                        DUE DATE
+                    </label>
+                    <input type="date" name="date" placeholder="dd-mm-yy">
+
+                </form>
+            </div>
+            <div>
+                <button>
+                    + ADD TASKS
+                </button>
+            </div>
+            <div>
+                <button>
+                    - DELETE TASKS
+                </button>
+            </div>
+        </div>
     </body>
 </html>
